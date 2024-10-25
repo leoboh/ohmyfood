@@ -1,0 +1,413 @@
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* =================================================== BODY * POLICE * @KEYFRAMES =================================================== */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+body {
+  margin: 0;
+}
+
+/* =========================================================== POLICE =============================================================== */
+
+@font-face {
+  font-family: "roboto";
+  src: url("./fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "robotomedium";
+  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "robotobold";
+  src: url("./fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+p,
+.p_footer2,
+.p_footer1,
+.p_footer {
+  font-family: "roboto", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "robotobold", sans-serif;
+}
+
+h3,
+h4 {
+  font-family: "robotomedium", sans-serif;
+}
+
+/* ========================================================== KEYFRAMES ============================================================= */
+
+@keyframes rotateloader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes displayloader {
+  from {
+    opacity: 1;
+    z-index: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes animcoeur {
+  from {
+    transform: scale(0);
+  }
+}
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* ============================================================ LOADER ============================================================== */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+.section_loader {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  text-align: center;
+  display: flex;
+  animation: displayloader 1s linear 1s both;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.span_loader {
+  width: 50px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 5px;
+  border-radius: 50px;
+  border: 6px solid #9356dc;
+  position: relative;
+}
+
+.span_loader:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  border: 6px solid transparent;
+  border-top-color: #ff79da;
+  border-radius: 50px;
+  animation: rotateloader 2s linear infinite;
+}
+
+.p_loader {
+  color: black;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: 5px;
+  font-size: 2em;
+}
+
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* ============================================================== NAV =============================================================== */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+.div_logo_nav {
+  width: 100%;
+  text-align: center;
+  height: 64px;
+}
+
+.logo_nav {
+  width: 200px;
+  margin-top: 16px;
+}
+
+.div_header_localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d8d8a3;
+  box-shadow: inset 0 4px 3px -2px #b7b3b3;
+}
+
+.div_icone_nav {
+  margin-right: 10px;
+}
+
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* =========================================================== SECTION 1 ============================================================ */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+.section_1 {
+  width: 100%;
+  height: 275px;
+  background-color: #5656560f;
+}
+
+.h1_section1 {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 32px;
+}
+
+.p_s-t_h1 {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.div_bouton_h1 {
+  width: 225px;
+  text-align: center;
+  border-radius: 50px;
+  margin: auto;
+  background: linear-gradient(#ff79da, #9356dc);
+}
+
+.div_bouton_h1:hover {
+  background: linear-gradient(#ff79daad, #9356dccf);
+  box-shadow: 1px 7px 10px #cbcbcbc7;
+}
+
+.p_bouton_h1 {
+  padding: 16px;
+  color: white;
+}
+
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* =========================================================== SECTION 2 ============================================================ */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+.section_fonctionnement {
+  padding-bottom: 20px;
+}
+
+.h1_section2 {
+  margin-left: 20px;
+  margin-top: 32px;
+}
+
+.div_bouton_fct {
+  position: relative;
+  border-radius: 20px;
+  width: 335px;
+  margin: auto;
+  background-color: #f7f7f7;
+  box-shadow: 1px 7px 10px #cbcbcbc7;
+  margin-top: 32px;
+}
+
+.div_bouton_fct:hover {
+  background-color: #b300ff14;
+}
+
+.div_bouton_fct:hover .div_icone_fct {
+  color: #9356dc;
+}
+
+.h3_fct {
+  text-align: center;
+  padding: 24px;
+}
+
+.div_icone_fct {
+  position: absolute;
+  left: 30px;
+  top: 27px;
+  color: gray;
+}
+
+.div_nb_fct {
+  width: 18px;
+  position: absolute;
+  top: 24px;
+  left: -13px;
+  padding: 3px;
+  border-radius: 100px;
+  background-color: #9356dc;
+  text-align: center;
+  color: white;
+}
+
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* =========================================================== SECTION 3 ============================================================ */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+.section3 {
+  background-color: #5656560f;
+}
+
+.h1_section3 {
+  margin-left: 20px;
+  padding-top: 32px;
+}
+
+.div_block_resto {
+  width: 340px;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 32px;
+  box-shadow: 1px 7px 10px #cbcbcbc7;
+}
+
+.div_photo_resto {
+  border-radius: 20px;
+  height: 160px;
+}
+
+.img_photo_resto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.nouveau {
+  position: relative;
+  top: -160px;
+  left: 70%;
+  padding: 5px;
+  background-color: #99e2d0;
+  color: #006c00;
+  width: 75px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.div_info_resto {
+  display: flex;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  height: 65px;
+}
+
+.h2_info_resto {
+  margin: 10px 0 5px 16px;
+  font-size: 1.1em;
+}
+
+.p_info_resto {
+  margin: 5px 0 5px 16px;
+}
+
+.div_coeur {
+  margin: auto;
+  margin-right: 16px;
+}
+
+.coeur1 {
+  position: relative;
+  top: 2px;
+  right: 0;
+}
+
+.coeur2 {
+  display: none;
+}
+
+.div_coeur:hover .coeur1 {
+  display: none;
+}
+
+.div_coeur:hover .coeur2 {
+  display: block;
+  animation: animcoeur 0.25s linear both;
+}
+
+.margin_section3 {
+  height: 32px;
+}
+
+.a_section3 {
+  text-decoration: none;
+  color: black;
+}
+
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* ============================================================ FOOTER ============================================================== */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+footer {
+  padding-left: 16px;
+  padding-bottom: 32px;
+  background-color: #3c3c3c;
+}
+
+.logo_footer {
+  width: 100px;
+  margin-top: 32px;
+}
+
+.div_p_footer1 {
+  display: flex;
+  margin: 20px 0 0px 0;
+  color: white;
+}
+
+.div_p_footer2 {
+  display: flex;
+  margin: 10px 0 0px 0;
+  color: white;
+}
+
+.div_icone_footer {
+  margin-right: 10px;
+}
+
+.icon_footer_2 {
+  font-size: small;
+}
+
+.p_footer {
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.p_footer1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.p_footer2 {
+  margin-top: 0;
+  color: white;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+/* ============================================================== END =============================================================== */
+/* ================================================================================================================================== */

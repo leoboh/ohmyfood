@@ -1,0 +1,99 @@
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* ======================================================= MEDIAS QUERIES =========================================================== */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+@media screen and (max-width: 350px) {
+  .nouveau {
+    left: 65% !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .div_bouton_fct {
+    width: 90%;
+    margin-left: 6.5%;
+  }
+  .h3_fct {
+    font-size: 0.8em;
+  }
+  .div_icone_fct {
+    top: 23px;
+  }
+  .div_nb_fct {
+    top: 19px;
+  }
+  .div_block_resto {
+    width: 90%;
+  }
+  .section_loader {
+    flex-direction: column;
+  }
+  .span_loader {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+  .p_loader {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .div_disp_flx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .h1_section2,
+  .h1_section3 {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .div_all_menufr {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .div_disp_flx {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .div_block_menufr {
+    width: 50%;
+    margin: auto;
+  }
+  .h3_section1_menufr {
+    width: 102px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .div_titre_menufr {
+    width: auto;
+  }
+  .h2_section1_menufr {
+    width: 290px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .div_disp_flx {
+    margin: auto;
+  }
+}
+
+/* ============================================================== END =============================================================== */
+/* ================================================================================================================================== */
